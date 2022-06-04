@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#container {
+    /* position: relative; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid red; */
+}
+
+#container #box {
+    /* position: relative; */
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.4);
+    background-color: antiquewhite;
+    /* border: solid red; */
+    height: 90%;
+    width: 50%;
+    border-radius: 5px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#container #box #head {
+    /* border: solid red; */
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #128C7E;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+#container #box #head .icon img {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    margin-left: 1rem;
+}
+
+#container #box #head span {
+    margin-left: 0.5rem;
+}
+
+#container #box #main {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1rem;
+    position: relative;
+    /* border: solid red; */
+}
+
+#container #box .chat {
+    color: black;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#container #box .chat1 {
+    float: right;
+    clear: both;
+}
+
+#container #box .chat2 {
+    float: left;
+    clear: both;
+}
+
+#container #box #messanger {
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    padding: 0.5rem;
+}
+
+#container #box #messanger .writter {
+    background-color: white;
+    border-radius: 50px;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: black;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-shadow: 0 0 5px rgba(128, 128, 128, 0.5);
+    height: 2.5rem;
+    margin-right: 0.5rem;
+}
+
+#container #box #messanger .send {
+    background-color: #128C7E;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    padding: 5px;
+}

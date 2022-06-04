@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <title>sr.chat</title>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="box" id="box">
+            <header class="head" id="head">
+                <div class="icon"><img src="/static/download.png" alt=""></div>
+                <span>Sr.Chat</span>
+            </header>
+            <main class="main" id="main">
+            </main>
+            <form action="/" method="post" class="messanger" id="messanger">
+                <input type="text" name="message" class="writter " id="writter">
+                <input type="submit" value="sent" class="send" id="send">
+            </form>
+        </div>
+    </div>
+</body>
+<script src="/static/client.js "></script>
+
+</html>
